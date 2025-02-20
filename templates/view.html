@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#AC1BF5" data-border-radius="large"></script>
+    <script>
+        window.courseId = "{{ course['id'] }}";
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">   
+    <main class="pt-1 pb-16">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <!-- Правый блок - результаты и вложения -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-lg shadow-sm p-6 sticky">
+                        <a  href="{{ url_for('profile') }}"  class=" border-b border-gray-200">
+                            <div class="flex items-center space-x-3">
+                                <img src="{{ url_for('static', filename= 'IMG.png')}}" class="w-10 h-10 rounded-full" alt="Avatar">                    <div>
+                                    <h3 class="text-sm font-medium">Александр Иванов</h3>
+                                    <p class="text-xs text-gray-500">16 сент. в 15:00 / 55 мин</p>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="text-lg font-semibold text-gray-900 mt-2 mb-2">Оглавление</h3>
+                        <button id="dropdownButton" class="w-full text-left font-semibold text-gray-900 bg-gray-100 p-2 rounded flex justify-between items-center">
+                            {{ chapter_title }} <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="dropdownMenu" class="hidden bg-white mt-2 mb-4 rounded shadow-lg border p-2">
+                            {% for chapter in chapters %}
+                            <a href="{{ url_for('view', course_id=course['id'], page_id=chapter['id']) }}" class="block p-2 hover:bg-gray-200">{{ chapter['title'] }}</a>
+                            {% endfor %}
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mt-2 mb-4">Прогресс по Главе</h3>
+                        <div class="space-y-4">
+                            <!-- Прогресс -->
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-600">{{ chapter_title }}</span>
+                                    <span class="text-gray-900" id="chapter-progress">0% Пройдено</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div id="chapter-progress-bar" class="bg-custom h-2 rounded-full" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <!-- Ресурсы -->
+                            <h3 class="text-lg font-semibold text-gray-900 mt-6">Материалы</h3>
+                            <div id="materials-list" class="space-y-3">
+                                <p class="text-sm text-gray-500">Загрузка материалов...</p>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mt-6">Учитель</h3>
+                        <div class="relative w-full">
+                            <video class="w-full rounded-lg shadow-md" controls>
+                                <source src="{{ url_for('static', filename='video/var1.mp4') }}" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <!-- Левый блок - учебный контент -->
+                <div class="lg:col-span-3">
+                    <!-- Название главы -->
+                    <div class="bg-white rounded-lg shadow p-6 mb-6">
+                        <h1 class="text-2xl font-bold text-gray-900">{{ chapter_title }}</h1>
+                    </div>
+                    <div id="page_{{ i }}" class="page-content" style="display:'block';">
+                        {% for task in page['tasks'] %}
+                        <div class="bg-white rounded-lg shadow-sm p-6 mb-6 {% if not loop.first %}hidden{% endif %} task-block" id="block-{{ loop.index }}">
+                            <h2 class="text-lg font-semibold text-gray-900 mb-4">{{ task['title'] }}</h2>
+
+                            {% if task['task_type'] == 'theory' %}
+                            <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+                                {% if task['image_url'] %}
+                                <img src="{{ task['image_url'] }}"
+                                    alt="{{ task['title'] }}"
+                                    class="w-full md:w-1/3 object-cover rounded-lg shadow-md {% if loop.index % 2 == 0 %} md:order-last {% endif %}">
+                                <!-- <img src="{{ url_for('static', filename=course['path'] ~ task['image_url']) }}" alt="{{ task['title'] }}" class="h-full object-cover rounded mb-4"> -->
+                                {% endif %}
+                                <div class="prose max-w-none text-gray-700 md:w-2/3">
+                                    {{ task['content'] | safe }}
+                                </div>
+                            </div>
+                               
+                            <!-- Кнопки "Подробнее" и "Дальше" -->
+                            <div class="flex justify-end mt-4 space-x-4">
+                                <button class="details-button bg-custom-100 border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 px-3 py-1 rounded text-sm" data-toggle-input>Подробнее</button>
+                                <button class="next-button bg-custom-500 text-white px-3 py-1 rounded text-sm hover:bg-custom-600" data-next="block-{{ loop.index + 1 }}">Дальше</button>
+                            </div>
+
+                            <!-- Светло-голубой блок (скрыт по умолчанию) -->
+                            <div class="bg-custom-100 bg-opacity-50 rounded-lg p-2 mt-4 hidden input-block">
+                                <label class="block">
+                                    <div class="flex items-center space-x-2">
+                                        <input type="text" class="flex-1 block rounded border-gray-300 shadow-sm p-1 text-sm" 
+                                            placeholder="Задайте вопрос по этому блоку или напишите 'Подробнее'">
+                                        <button class="submit-question bg-custom-500 text-white px-3 py-1 rounded text-sm hover:bg-custom-600">Отправить</button>
+                                    </div>
+                                </label>
+                            </div>
+
+                           
+                            {% elif task['task_type'] == 'text' %}
+                            <div class="space-y-4">
+                                {% for item in task['content'] %}
+                                <label class="block">
+                                    <span class="text-gray-700">{{ item['condition'] }}</span>
+                                    <textarea rows="6" class="mt-1 block w-full rounded border-gray-300 shadow-sm p-2" 
+                                              data-answer="{{ item['answer'] }}" placeholder="Введите ваш ответ..."></textarea>
+                                </label>
+                                {% endfor %}
+                            </div>
+                            <div class="flex justify-end mt-4 space-x-4">
+                                <button class="check-answers border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 px-3 py-1 rounded text-sm">Проверить</button>
+                                <button class="next-button bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600" data-next="block-{{ loop.index + 1 }}">Дальше</button>
+                            </div>
+                            {% elif task['task_type'] == 'test' %}
+                            <div class="space-y-2">
+                                {% for item in task['content'] %}
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2" data-answer="{{ item['answer'] }}">
+                                    {{ item['condition'] }}
+                                </label>
+                                {% endfor %}
+                            </div>
+                            <div class="flex justify-end mt-4 space-x-4">
+                                <button class="check-answers border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 px-3 py-1 rounded text-sm">Проверить</button>
+                                <button class="next-button bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600" data-next="block-{{ loop.index + 1 }}">Дальше</button>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+    
+                
+            </div>
+        </div>
+        
+        <div id="chapter-completed" class="bg-green-100 text-blue-900 text-center p-4 rounded-lg mt-6 hidden">
+            <h2 class="text-lg font-bold">Глава пройдена!</h2>
+            <p>Поздравляем, вы успешно прошли эту главу. Перейдите к следующей, чтобы продолжить обучение.</p>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/blocks.js') }}"></script>
+    <script>
+        document.getElementById("dropdownButton").addEventListener("click", function() {
+            document.getElementById("dropdownMenu").classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

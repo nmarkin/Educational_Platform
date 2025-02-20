@@ -1,0 +1,27 @@
+{
+    "title": "Введение",
+    "tasks": [
+        {
+            "title": "Общие сведения о допуске страховых организаций",
+            "task_type": "theory",
+            "content": "<p>Курс посвящен процессу допуска страховых организаций, имеющих лицензию на осуществление добровольного страхования жизни, на рынок коллективных инвестиций. Это важно для обеспечения правовой основы функционирования финансовых организаций и их интеграции в систему коллективных инвестиций.</p>",
+            "image_keywords": [
+                "insurance organizations",
+                "collective investments",
+                "regulatory framework"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1620228885847-9eab2a1adddc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdpbnN1cmFuY2UlMjBvcmdhbml6YXRpb25zJTI3JTJDJTIwJTI3Y29sbGVjdGl2ZSUyMGludmVzdG1lbnRzJTI3JTJDJTIwJTI3cmVndWxhdG9yeSUyMGZyYW1ld29yayUyNyU1RHxlbnwxfDB8fHwxNzM4OTI2NTMzfDA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Значение лицензирования для страховых организаций",
+            "task_type": "theory",
+            "content": "<p>Лицензирование страховых организаций, занимающихся добровольным страхованием жизни, играет ключевую роль в процессах допуска к рынку коллективных инвестиций. Лицензия управляющей компании позволяет страховым организациям обслуживать клиентов через инвестиционные фонды и другие финансовые инструменты, что создает новые возможности для роста и развития.</p>",
+            "image_keywords": [
+                "licensing",
+                "financial growth",
+                "investment opportunities"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1444653389962-8149286c578a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdsaWNlbnNpbmclMjclMkMlMjAlMjdmaW5hbmNpYWwlMjBncm93dGglMjclMkMlMjAlMjdpbnZlc3RtZW50JTIwb3Bwb3J0dW5pdGllcyUyNyU1RHxlbnwxfDB8fHwxNzM4OTI2NTMzfDA&ixlib=rb-4.0.3&q=80&w=400"
+        }
+    ]
+}

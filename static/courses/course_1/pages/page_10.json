@@ -1,0 +1,53 @@
+{
+    "title": "Работа с возражениями",
+    "tasks": [
+        {
+            "title": "Понимание возражений как возможности",
+            "task_type": "theory",
+            "content": "<p>Возражения клиентов не следует рассматривать как негативные сигналы; наоборот, это свидетельство их заинтересованности. Управление возражениями позволяет выявить недовольство клиента и предложить более полную информацию о продукте. Это возможность углубить диалог и показать клиенту, что его мнения важны.</p>",
+            "image_url": "https://images.unsplash.com/photo-1512106374988-c95f566d39ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdvYmplY3Rpb24lMjBoYW5kbGluZyUyNyUyQyUyMCUyN2N1c3RvbWVyJTIwaW50ZXJlc3QlMjclMkMlMjAlMjdzYWxlcyUyMHRlY2huaXF1ZXMlMjclNUR8ZW58MHx8fHwxNzM4Nzc1NTAyfDA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Основные принципы работы с возражениями",
+            "task_type": "theory",
+            "content": "<p>Существует несколько ключевых принципов, которые необходимо учитывать при работе с возражениями:</p><ul><li>Не перебивать и не спорить с клиентом. Это помогает избежать конфликта и сохранить конструктивный подход к обсуждению проблемы.</li><li>Сохранять спокойствие. Важно не реагировать на тон голоса клиента и сосредоточиться на сути его потребности.</li><li>Показывать заинтересованность. Клиент должен ощущать, что его мнение слышат и учитывают.</li></ul>",
+            "image_url": "https://images.unsplash.com/photo-1517702087178-fa967a8e8169?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdwcmluY2lwbGVzJTIwb2YlMjBvYmplY3Rpb24lMjBoYW5kbGluZyUyNyUyQyUyMCUyN2VmZmVjdGl2ZSUyMGNvbW11bmljYXRpb24lMjclMkMlMjAlMjdjdXN0b21lciUyMHNlcnZpY2UlMjBza2lsbHMlMjclNUR8ZW58MHx8fHwxNzM4Nzc1NTAyfDA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Тестовый вопрос по работе с возражениями",
+            "task_type": "test",
+            "content": [
+                {
+                    "condition": "Необходимо продолжать спорить с клиентом, чтобы доказать свою точку зрения.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Возражения клиента следует воспринимать как признак его заинтересованности в продукте.",
+                    "answer": "+"
+                },
+                {
+                    "condition": "Лучше не обращать внимания на тон клиента.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Сохранять спокойствие во время разговора очень важно.",
+                    "answer": "+"
+                }
+            ]
+        },
+        {
+            "title": "Открытый вопрос к пользователю",
+            "task_type": "text",
+            "content": [
+                {
+                    "condition": "Как вы воспринимаете возражения клиентов в процессе продаж?",
+                    "answer": "Они представляют собой возможности для улучшения предложения и установления более глубокого контакта с клиентом."
+                }
+            ],
+            "hints": [
+                "Подумайте о вашем опыте общения с клиентами.",
+                "Как можно использовать возражения для позитивного исхода?"
+            ]
+        }
+    ]
+}

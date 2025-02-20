@@ -1,0 +1,51 @@
+{
+    "title": "Структура продажи",
+    "tasks": [
+        {
+            "title": "Подготовка к звонку",
+            "task_type": "theory",
+            "content": "<p>Перед началом телефонной продажи важно настроиться на позитивный лад и тщательно подготовиться. Настройте себя на успешный исход звонка, оставив плохое настроение за пределами офиса. Установите четкую задачу на день и изучите информацию о клиенте.</p><p>Не бойтесь отказов: каждый отказ — это возможность получить опыт и улучшить свои навыки для следующих клиентов.</p>",
+            "image_url": "https://images.unsplash.com/photo-1519540393135-f52583f80e8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdwcmVwYXJhdGlvbiUyNyUyQyUyMCUyN3NhbGVzJTIwY2FsbCUyNyUyQyUyMCUyN3RlbGVwaG9uZSUyMHNhbGVzJTI3JTVEfGVufDB8fHx8MTczODc3NTM3MHww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Установление контакта",
+            "task_type": "theory",
+            "content": "<p>Первое впечатление имеет решающее значение. Согласно правилу сорока секунд, у вас есть только один шанс произвести первое впечатление. Начните разговор с приветствия, представьтесь от лица компании и обратитесь к клиенту по имени.</p><p>Важно уточнить, удобно ли клиенту говорить, и четко обозначить цель вашего звонка. Например: 'Иван Иванович? Здравствуйте, меня зовут Василий. Я звоню Вам из Ситибанка, Департамент управления кредитными картами. Вам удобно сейчас говорить?'</p>",
+            "image_url": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdjb250YWN0JTIwZXN0YWJsaXNobWVudCUyNyUyQyUyMCUyN2ZpcnN0JTIwaW1wcmVzc2lvbiUyNyUyQyUyMCUyN3RlbGVwaG9uZSUyMGV0aXF1ZXR0ZSUyNyU1RHxlbnwwfHx8fDE3Mzg3NzUzNzF8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Тестовый вопрос",
+            "task_type": "test",
+            "content": [
+                {
+                    "condition": "Согласно правилам успешного звонка, важно установить контакт с клиентом.",
+                    "answer": "+"
+                },
+                {
+                    "condition": "Первое впечатление не имеет значения в телефонных продажах.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Начать разговор можно с неверного обращения.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Уточнить удобство разговора для клиента нужно.",
+                    "answer": "+"
+                }
+            ]
+        },
+        {
+            "title": "Выявление потребностей",
+            "task_type": "theory",
+            "content": "<p>Следующий этап — выявление потребностей. Используйте задавание открытых и закрытых вопросов для глубокого понимания потребностей клиента. Убедитесь, что ваш клиент чувствует себя значимым и вовлеченным в диалог.</p><p>Техника SPIN включает в себя ситуационные, проблемные, извлекающие и направляющие вопросы, что помогает структуировать обсуждение и выявить скрытые потребности.</p>",
+            "image_url": "https://images.unsplash.com/photo-1594583388647-364ea6532257?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjduZWVkcyUyMGFzc2Vzc21lbnQlMjclMkMlMjAlMjdTUElOJTIwdGVjaG5pcXVlJTI3JTJDJTIwJTI3Y3VzdG9tZXIlMjBuZWVkcyUyNyU1RHxlbnwwfHx8fDE3Mzg3NzUzNzF8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Методы завершения продажи",
+            "task_type": "theory",
+            "content": "<p>Завершение продажи — это важный этап. Используйте различные методы, такие как альтернативные вопросы, которые предлагают клиенту выбор, выгодный вам. Например: 'Вы готовы активировать карту прямо сейчас или вам требуется дополнительная информация?'</p><p>Также можно использовать сужение вопроса, подводя позитивные итоги и уточняя детали. Суммирование достоинств также помогает клиенту осознать все выгоды покупки.</p>",
+            "image_url": "https://images.unsplash.com/photo-1532795986-dbef1643a596?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdjbG9zaW5nJTIwc2FsZXMlMjclMkMlMjAlMjdzYWxlcyUyMHRlY2huaXF1ZXMlMjclMkMlMjAlMjdmaW5hbGl6aW5nJTIwdGhlJTIwc2FsZSUyNyU1RHxlbnwwfHx8fDE3Mzg3NzUzNzJ8MA&ixlib=rb-4.0.3&q=80&w=400"
+        }
+    ]
+}

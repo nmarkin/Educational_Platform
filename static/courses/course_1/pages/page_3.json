@@ -1,0 +1,53 @@
+{
+    "title": "Подготовка к телефонной продаже",
+    "tasks": [
+        {
+            "title": "Настройка на позитивный лад",
+            "task_type": "theory",
+            "content": "<p>Для успешного завершения звонка с продажей необходимо настроиться на позитивный лад. Поставьте перед собой цель, что этот разговор приведет к успешной продаже. Оставьте все плохие мысли и настроение за пределами рабочего времени. Четкая установка на позитивный результат помогает лучше взаимодействовать с клиентами.</p>",
+            "image_url": "https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdwb3NpdGl2ZSUyMG1pbmRzZXQlMjclMkMlMjAlMjdzYWxlcyUyMHByZXBhcmF0aW9uJTI3JTJDJTIwJTI3cGhvbmUlMjBzYWxlcyUyNyU1RHxlbnwwfHx8fDE3Mzg3NzUzODB8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Изучение клиента перед звонком",
+            "task_type": "theory",
+            "content": "<p>Перед тем, как осуществить звонок, рекомендуется предварительно изучить клиента. Знание информации о клиенте и понимание его потребностей значительно повысит ваши шансы на успешную продажу. Также следует учитывать, что отказ от клиента не является концом света — это возможность для извлечения уроков и улучшения своих навыков.</p>",
+            "image_url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdjdXN0b21lciUyMHN0dWR5JTI3JTJDJTIwJTI3Y2xpZW50JTIwcmVzZWFyY2glMjclMkMlMjAlMjdzYWxlcyUyMHN0cmF0ZWd5JTI3JTVEfGVufDB8fHx8MTczODc3NTM4MXww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Тест на настройку перед звонками",
+            "task_type": "test",
+            "content": [
+                {
+                    "condition": "Очень важно оставлять плохое настроение вне рабочего времени.",
+                    "answer": "+"
+                },
+                {
+                    "condition": "Предварительно изучить клиента не обязательно, это несущественно.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Не нужно настраиваться на позитивный результат перед звонком.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Не бойтесь услышать отказ, это часть процесса продаж.",
+                    "answer": "+"
+                }
+            ]
+        },
+        {
+            "title": "Открытый вопрос к пользователю",
+            "task_type": "text",
+            "content": [
+                {
+                    "condition": "Что вы считаете самым важным при подготовке к телефонной продаже?",
+                    "answer": "Пример правильного ответа."
+                }
+            ],
+            "hints": [
+                "Подумайте о своих мотивациях",
+                "Как вы подходите к изучению клиентов?"
+            ]
+        }
+    ]
+}

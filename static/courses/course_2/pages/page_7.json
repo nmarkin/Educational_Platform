@@ -1,0 +1,63 @@
+{
+    "title": "Основания для отказа и процесс принятия решения",
+    "tasks": [
+        {
+            "title": "Основания для отказа в предоставлении лицензии",
+            "task_type": "theory",
+            "content": "<p>Лицензия управляющей компании может быть отказана при наличии в документах, представленных для получения лицензии, неполной или недостоверной информации. Также отказ может быть основан на несоответствии соискателя лицензии установленным лицензионным условиям. К другим основаниям для отказа относится несоответствие документов, представленных для получения лицензии, требованиям законодательства Российской Федерации.</p>",
+            "image_keywords": [
+                "license refusal",
+                "insurance company",
+                "regulatory compliance"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1531973576160-7125cd663d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdsaWNlbnNlJTIwcmVmdXNhbCUyNyUyQyUyMCUyN2luc3VyYW5jZSUyMGNvbXBhbnklMjclMkMlMjAlMjdyZWd1bGF0b3J5JTIwY29tcGxpYW5jZSUyNyU1RHxlbnwxfDB8fHwxNzM4OTI2NjE5fDA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Процесс принятия решения по выдаче лицензии",
+            "task_type": "theory",
+            "content": "<p>Процесс принятия решения Банком России о выдаче лицензии управляющей компании включает несколько этапов. Сначала Банк России рассматривает представленные документы и проводит проверочные мероприятия. Если все условия соблюдены и документы в порядке, Банк принимает решение о выдаче лицензии. В случае положительного решения Банк вносит информацию в реестр и направляет уведомление о принятом решении соискателю.</p>",
+            "image_keywords": [
+                "decision-making process",
+                "licensing",
+                "financial institution"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1444653389962-8149286c578a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdkZWNpc2lvbi1tYWtpbmclMjBwcm9jZXNzJTI3JTJDJTIwJTI3bGljZW5zaW5nJTI3JTJDJTIwJTI3ZmluYW5jaWFsJTIwaW5zdGl0dXRpb24lMjclNUR8ZW58MXwwfHx8MTczODkyNjYxOXww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Тестовый вопрос о основаниях для отказа",
+            "task_type": "test",
+            "content": [
+                {
+                    "condition": "Неправильная информация в документах",
+                    "answer": "+"
+                },
+                {
+                    "condition": "Полное соответствие всем требованиям",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Подготовка недостающих документов",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Несоответствие требованиям лицензии",
+                    "answer": "+"
+                }
+            ]
+        },
+        {
+            "title": "Открытый вопрос к пользователю",
+            "task_type": "text",
+            "content": [
+                {
+                    "condition": "Какой главный вывод из этой главы?",
+                    "answer": "Лицензия может быть отказана на основании нарушения требований законодательства и несоответствия предоставленных данных."
+                }
+            ],
+            "hints": [
+                "Рассматривайте все условия, указанные в законах.",
+                "Обратите внимание на важность точности предоставляемой информации."
+            ]
+        }
+    ]
+}

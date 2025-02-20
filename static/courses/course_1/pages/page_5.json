@@ -1,0 +1,59 @@
+{
+    "title": "Компоненты телефонного общения",
+    "tasks": [
+        {
+            "title": "Важность невербальных сигналов",
+            "task_type": "theory",
+            "content": "<p>Согласно статистическим данным, внимание собеседника распределяется следующим образом: 7% – смысл слов, 38% – интонация и 55% – невербальный компонент. Это подчеркивает, что чтение невербальных сигналов является важным условием для эффективного общения. Невербальные сигналы помогают понять истинные мысли собеседника, и первое впечатление формируется под воздействием невербальных факторов.</p>",
+            "image_url": "https://images.unsplash.com/photo-1532200846567-1bd8bd5b23aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdub252ZXJiYWwlMjBjb21tdW5pY2F0aW9uJTI3JTJDJTIwJTI3Ym9keSUyMGxhbmd1YWdlJTI3JTJDJTIwJTI3ZmFjaWFsJTIwZXhwcmVzc2lvbnMlMjclNUR8ZW58MHx8fHwxNzM4Nzc1NDA3fDA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Роль техники улыбки и положения тела",
+            "task_type": "theory",
+            "content": "<p>Во время телефонного разговора улыбка влияет на интонацию голоса, придавая ему заинтересованность и энтузиазм. Улыбка располагает клиента к общению, ведь сложно передать тепло голоса, не улыбаясь. Положение тела также играет важную роль; например, активная жестикуляция может передать энтузиазм и уверенность, улучшая манеру ведения разговора.</p>",
+            "image_url": "https://images.unsplash.com/photo-1532200846567-1bd8bd5b23aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdzbWlsZSUyMHRlY2huaXF1ZSUyNyUyQyUyMCUyN2JvZHklMjBwb3N0dXJlJTI3JTJDJTIwJTI3Y29tbXVuaWNhdGlvbiUyMHNraWxscyUyNyU1RHxlbnwwfHx8fDE3Mzg3NzU0MDh8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Темп, ударение и громкость речи",
+            "task_type": "theory",
+            "content": "<p>Темп речи в разговоре критически важен. Слишком быстрый темп может вызывать непонимание, тогда как слишком медленный может раздражать клиента. Использование правильного ударения и интонации помогает акцентировать внимание клиента на ключевых моментах, а громкость речи должна быть достаточно отчетливой, чтобы не вызывать необходимости переспрашивать.</p>",
+            "image_url": "https://images.unsplash.com/photo-1541872705-1f73c6400ec9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdzcGVlY2glMjBwYWNlJTI3JTJDJTIwJTI3aW50b25hdGlvbiUyNyUyQyUyMCUyN3ZvbHVtZSUyMGNvbnRyb2wlMjclNUR8ZW58MHx8fHwxNzM4Nzc1NDA4fDA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Тестовый вопрос",
+            "task_type": "test",
+            "content": [
+                {
+                    "condition": "Невербальные сигналы играют малую роль в телефонном общении.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Темп речи может повлиять на отношение клиента.",
+                    "answer": "+"
+                },
+                {
+                    "condition": "Техника улыбки не имеет значения во время телефонного разговора.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Правильное использование интонации может помочь привлечь внимание клиента.",
+                    "answer": "+"
+                }
+            ]
+        },
+        {
+            "title": "Открытый вопрос к пользователю",
+            "task_type": "text",
+            "content": [
+                {
+                    "condition": "Как влияют невербальные элементы на восприятие клиента во время телефонного общения?",
+                    "answer": "Невербальные элементы, такие как интонация и техника улыбки, помогают установить доверие и заинтересованность клиента."
+                }
+            ],
+            "hints": [
+                "Подумайте о важности эмоций в общении.",
+                "Как невербальные сигналы могут менять восприятие?"
+            ]
+        }
+    ]
+}

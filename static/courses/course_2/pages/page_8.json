@@ -1,0 +1,63 @@
+{
+    "title": "Полезные материалы",
+    "tasks": [
+        {
+            "title": "Введение в полезные материалы",
+            "task_type": "theory",
+            "content": "<p>В данной главе мы рассмотрим полезные ресурсы и материалы, доступные для страховщиков, которые хотят получить доступ к рынку коллективных инвестиций на основании лицензии на осуществление добровольного страхования жизни.</p><p>Банк России активно взаимодействует с участниками рынка и предлагает различные ресурсы, которые помогут обеспечить соблюдение законодательных требований и упрощают процессы для соискателей лицензий.</p>",
+            "image_keywords": [
+                "insurance resources",
+                "financial regulations",
+                "investment market access"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdpbnN1cmFuY2UlMjByZXNvdXJjZXMlMjclMkMlMjAlMjdmaW5hbmNpYWwlMjByZWd1bGF0aW9ucyUyNyUyQyUyMCUyN2ludmVzdG1lbnQlMjBtYXJrZXQlMjBhY2Nlc3MlMjclNUR8ZW58MXwwfHx8MTczODkyNjYzMnww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Обзор ресурсов от Банка России",
+            "task_type": "theory",
+            "content": "<p>На сайте Банка России представлены различные материалы, включая разъяснения, чек-листы и видеоинструкции. В разделе «Деятельность» вы можете найти информацию о процедурах допуска для страховых организаций, желающих выйти на рынок коллективных инвестиций.</p><p>Каждый из этих материалов создан для того, чтобы помочь организациям лучше понять требования банковского регулирования и эффективно подготовить необходимые документы.</p>",
+            "image_keywords": [
+                "bank resources",
+                "insurance regulations",
+                "financial guidelines"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1444653389962-8149286c578a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdiYW5rJTIwcmVzb3VyY2VzJTI3JTJDJTIwJTI3aW5zdXJhbmNlJTIwcmVndWxhdGlvbnMlMjclMkMlMjAlMjdmaW5hbmNpYWwlMjBndWlkZWxpbmVzJTI3JTVEfGVufDF8MHx8fDE3Mzg5MjY2MzJ8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Тест на знание полезных материалов",
+            "task_type": "test",
+            "content": [
+                {
+                    "condition": "Банк России предоставляет чек-листы и разъяснения для страховщиков.",
+                    "answer": "+"
+                },
+                {
+                    "condition": "Полезные материалы доступны только на русском языке.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Изучение материалов Банка России не требуется для получения лицензии.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Раздел на сайте Банка России поможет подготовиться к подаче заявки на лицензию.",
+                    "answer": "+"
+                }
+            ]
+        },
+        {
+            "title": "Как использовать полезные материалы?",
+            "task_type": "text",
+            "content": [
+                {
+                    "condition": "Как вы планируете использовать ресурсы, предоставленные Банком России, для получения лицензии?",
+                    "answer": "Я изучу все материалы и подготовлю документы в соответствии с их рекомендациями."
+                }
+            ],
+            "hints": [
+                "Изучите разделы сайта Банка России.",
+                "Определите ключевые документы, которые вам понадобятся."
+            ]
+        }
+    ]
+}

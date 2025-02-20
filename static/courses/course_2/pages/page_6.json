@@ -1,0 +1,27 @@
+{
+    "title": "Направление запросов и проверочные мероприятия",
+    "tasks": [
+        {
+            "title": "Процедура направления запросов",
+            "task_type": "theory",
+            "content": "<p>В процессе рассмотрения документов Банк России имеет право направлять запросы с целью уточнения представленных соискателем данных или получения недостающей информации. Запрос может быть направлен в письме или в электронном виде, и на него необходимо ответить в установленные сроки, указанные в запросе. Сроки рассмотрения документов продлеваются на время, необходимое для ответа на запрос, и при этом, если соискатель не представит запрашиваемые документы в установленный срок, рассмотрение заявления может быть прекращено.</p>",
+            "image_keywords": [
+                "request procedure",
+                "information verification",
+                "regulatory compliance"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1704022472896-c7f2423b3ce7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdyZXF1ZXN0JTIwcHJvY2VkdXJlJTI3JTJDJTIwJTI3aW5mb3JtYXRpb24lMjB2ZXJpZmljYXRpb24lMjclMkMlMjAlMjdyZWd1bGF0b3J5JTIwY29tcGxpYW5jZSUyNyU1RHxlbnwxfDB8fHwxNzM4OTI2NjEwfDA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Проверочные мероприятия",
+            "task_type": "theory",
+            "content": "<p>Проверочные мероприятия проводятся Банком России для установления достоверности сведений, содержащихся в документах, представленных соискателем для получения лицензии. Эти мероприятия могут включать выездные проверки по адресу соискателя и анализ запрашиваемых документов. Перед началом проверок соискателю направляется уведомление не позднее чем за один рабочий день. Цели данной проверки заключаются в установлении соответствия лицензионным условиям и обеспечения законодательных требований.</p>",
+            "image_keywords": [
+                "verification activities",
+                "regulatory authority",
+                "compliance check"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1515971036299-db82a3ca89cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjd2ZXJpZmljYXRpb24lMjBhY3Rpdml0aWVzJTI3JTJDJTIwJTI3cmVndWxhdG9yeSUyMGF1dGhvcml0eSUyNyUyQyUyMCUyN2NvbXBsaWFuY2UlMjBjaGVjayUyNyU1RHxlbnwxfDB8fHwxNzM4OTI2NjEwfDA&ixlib=rb-4.0.3&q=80&w=400"
+        }
+    ]
+}

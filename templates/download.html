@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Создать курс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">    
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#AC1BF5" data-border-radius='small'></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="flex min-h-screen">
+        <aside class="w-64 bg-white border-r border-gray-200 flex-shrink-0">            
+            <div class="p-4 border-b border-gray-200">
+                <div class="flex items-center space-x-3">
+                    <img src="{{ url_for('static', filename= 'IMG.png')}}" class="w-10 h-10 rounded-full" alt="Avatar">                    <div>
+                        <h3 class="text-sm font-medium">Александр Иванов</h3>
+                        <p class="text-xs text-gray-500">16 сент. в 15:00 / 55 мин</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="p-4 space-y-2">                
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i class="fas fa-book-open w-5"></i>
+                    <span>Мои уроки</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">                    <i class="fas fa-calendar w-5"></i>
+                    <span>Расписание</span>
+                </a>                
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i class="fas fa-chalkboard-teacher w-5"></i>
+                    <span>Репетиторы</span>
+                </a>
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">                    <i class="fas fa-book w-5"></i>
+                    <span>Учебники</span>
+                </a>
+                <a href="{{ url_for('profile') }}" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-custom bg-gray-100">                    
+                    <i class="fas fa-graduation-cap w-5"></i>
+                    <span>Курсы</span>
+                </a>              
+                <a href="#" class="flex items-center space-x-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+                    <i class="fas fa-star w-5"></i>
+                    <span>Рейтинг</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-8">            
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-2xl font-semibold mb-8">Создать курс</h1>                
+                <div class="bg-white rounded-lg p-6 shadow-sm mb-6">
+                    <h2 class="font-medium mb-4">Выберите файл</h2>
+                    <button id="upload-btn" class="border-2 border-dashed border-gray-300 rounded-lg p-6 w-full text-center hover:border-custom transition-colors !rounded-button">                        
+                        <i class="fas fa-plus text-custom mb-2"></i>
+                        <p class="text-sm text-gray-500">Перетащите в эту область или загрузите файлы PDF, DOCX, TXT, PPTX </p>                    
+                    </button>
+                </div>
+
+                <div id="upload-container" class="mt-4 space-y-2 hidden">
+                    <div id="file-list" class="space-y-4"></div>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm mb-6">
+                    <h2 class="font-medium mb-4">Основная информация</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Название курса</label>
+                            <input type="text" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-custom focus:border-custom" placeholder="Введите название">                        
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Описание курса</label>
+                            <textarea class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-custom focus:border-custom h-32" placeholder="Кратко опишите для кого этот курс, что должен усвоить обучающийся, главные пункты или оставьте поле пустым"></textarea>
+                            <div class="text-right text-sm text-gray-500 mt-1">0/500</div>
+                        </div>                    
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm mb-6">
+                    <h2 class="font-medium mb-4">Насыщенность курса</h2>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sm text-gray-600">Сжатый</span>
+                        <div class="flex-1">
+                            <input type="range" class="w-full h-2 rounded-lg appearance-none cursor-pointer bg-gray-200" min="1" max="3" value="2">                        
+                        </div>
+                        <span class="text-sm text-gray-600">Расширенный</span>
+                    </div>                
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm mb-6">
+                    <h2 class="font-medium mb-4">Структура курса</h2>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <div id="generating" class="flex items-center space-x-2 hidden">                            
+                            <div class="animate-spin rounded-full h-4 w-4 border-2 border-custom border-t-transparent "></div>
+                            <span class="text-sm text-gray-600">Идет генерация оглавления...</span>
+                        </div>
+                        <div id="course-structure" class="space-y-4 hidden"></div>
+                    </div>
+                    <button id="preview-btn" class="mt-2 px-3 py-1 text-sm text-custom hover:bg-gray-50 border border-custom rounded-lg">
+                        <i class="fas fa-eye mr-2"></i>
+                        Предпросмотр
+                    </button>
+                </div>
+
+                <div class="flex justify-end space-x-4">
+                    <button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors !rounded-button">Отмена</button>
+                    <button id="publish-btn" class="px-6 py-2 bg-custom text-white rounded-lg hover:bg-custom/90 transition-colors !rounded-button">Добавить</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="static/js/upload.js"></script>
+</body>
+</html>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+ <!-- ------------------------------------------------------------------------------------------------------------------- -->
+  <!-- ------------------------------------------------------------------------------------------------------------------- -->
+   <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- 
+<!DOCTYPE html><html lang="ru"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Создать курс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#AC1BF5" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 font-inter">
+    <div class="flex min-h-screen">
+        <aside class="w-64 bg-white border-r border-gray-200 fixed h-full">
+            <div class="p-4 border-b border-gray-200">
+                <div class="flex items-center gap-3">
+                    <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" class="w-10 h-10 rounded-full" alt="Александр Иванов"/>
+                    <div>
+                        <h3 class="font-medium">Александр Иванов</h3>
+                        <p class="text-sm text-gray-500">16:00 до 18:00</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="p-2">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-book-open"></i>
+                    <span>Мои уроки</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-calendar"></i>
+                    <span>Расписание</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Репетиторы</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-book"></i>
+                    <span>Учебники</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-custom bg-gray-100 rounded-lg">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Курсы</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-journal-whills"></i>
+                    <span>Дневник</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-50">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Рейтинг</span>
+                </a>
+            </nav>
+        </aside>
+        <main class="ml-64 flex-1 p-8">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-2xl font-semibold mb-8">Создать курс</h1>
+                <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
+                    <div class="mb-6">
+                        <p class="mb-2">Выберите файл</p>
+                        <div class="border-2 border-dashed border-gray-200 rounded-lg p-6 text-center">
+                            <button class="text-custom hover:text-custom-600 flex items-center justify-center gap-2 mx-auto !rounded-button">
+                                <i class="fas fa-plus"></i>
+                                Добавить файл
+                            </button>
+                            <p class="text-sm text-gray-500 mt-2">Перетащите в эту область или загрузите файл учебника до 10 МБ</p>
+                        </div>
+                        <div class="mt-4 space-y-2">
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-file-pdf text-custom"></i>
+                                    <span>File name.pdf</span>
+                                </div>
+                                <span class="text-sm text-gray-500">124 КБ</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-file-pdf text-custom"></i>
+                                    <span>File name.pdf</span>
+                                </div>
+                                <span class="text-sm text-gray-500">124 КБ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block mb-2">Название курса</label>
+                            <input type="text" class="w-full border-gray-200 rounded-lg" value="Макроэкономическая ситуация и влияние на рынок"/>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Дисциплины</label>
+                            <select class="w-full border-gray-200 rounded-lg">
+                                <option>Международные финансы</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Описание курса</label>
+                            <textarea class="w-full border-gray-200 rounded-lg" rows="4">Специальная часть курса посвящена проблемам открытой экономики, таким как платежный баланс, детерминанты валютного курса, равновесие валютного рынка и платежного баланса.</textarea>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Насыщенность курса</label>
+                            <input type="range" class="w-full" min="0" max="100" value="30"/>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Стандартная</span>
+                                <span>Расширенный</span>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Структура курса</label>
+                            <div class="space-y-4">
+                                <div class="p-4 border border-gray-200 rounded-lg">
+                                    <h3 class="font-medium mb-2">Макроэкономика и ее основные показатели</h3>
+                                    <p class="text-sm text-gray-600">Макроэкономические показатели, циклы экономики, монетарная и фискальная политика, которую проводит государство, курс валют и ключевая ставка тесно связаны с ситуациями на фондовом рынке.</p>
+                                <button class="mt-2 px-3 py-1 text-sm text-custom hover:bg-gray-50 border border-custom rounded-lg"><i class="fas fa-eye mr-2"></i>Предпросмотр</button></div>
+                                <div class="p-4 border border-gray-200 rounded-lg">
+                                    <h3 class="font-medium mb-2">Цикличность экономики</h3>
+                                    <p class="text-sm text-gray-600">Как глобальные явления и процессы, которые происходят в масштабах экономики страны, влияют на стоимость активов.</p>
+                                <button class="mt-2 px-3 py-1 text-sm text-custom hover:bg-gray-50 border border-custom rounded-lg"><i class="fas fa-eye mr-2"></i>Предпросмотр</button></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Обложка курса</label>
+                            <div class="w-32 h-32 bg-gray-100 rounded-lg overflow-hidden">
+                                <img src="https://creatie.ai/ai/api/search-image?query=A 3D vector illustration of a globe with financial charts and graphs floating around it, symbolizing global economics and market analysis. The background is a solid light color.&width=128&height=128&orientation=squarish&removebg=true&flag=88eddc2b-04e3-44f5-bf9a-28a8be56b576&flag=62fd2c7c-ac69-41f4-9568-02ffff29bfed" class="w-full h-full object-cover" alt="Обложка"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-end gap-4">
+                    <button class="px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg !rounded-button">Отмена</button>
+                    <button class="px-4 py-2 bg-custom text-white hover:bg-custom-600 rounded-lg !rounded-button">Добавить</button>
+                </div>
+            </div>
+        </main>
+    </div> -->

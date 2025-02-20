@@ -1,0 +1,60 @@
+{
+    "title": "Перечень и способ подачи документов",
+    "tasks": [
+        {
+            "title": "Перечень документов, необходимых для подачи заявки",
+            "task_type": "theory",
+            "content": "<p>Страховая организация, желающая получить лицензию управляющей компании, должна представить следующий перечень документов:</p><ul><li>Заявление о предоставлении лицензии.</li><li>Анкета физического лица.</li><li>Анкета в отношении лица, осуществляющего (планирующего осуществлять) функции контролера или сотрудника службы внутреннего контроля.</li><li>Подтверждающие документы, такие как бухгалтерская отчетность.</li><li>Документ об активах, принимаемых к расчету.</li><li>Политика управления конфликтом интересов.</li><li>Правила организации и осуществления внутреннего контроля.</li></ul>",
+            "image_keywords": [
+                "documents submission checklist",
+                "application process",
+                "license application requirements"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1590935217281-8f102120d683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdkb2N1bWVudHMlMjBzdWJtaXNzaW9uJTIwY2hlY2tsaXN0JTI3JTJDJTIwJTI3YXBwbGljYXRpb24lMjBwcm9jZXNzJTI3JTJDJTIwJTI3bGljZW5zZSUyMGFwcGxpY2F0aW9uJTIwcmVxdWlyZW1lbnRzJTI3JTVEfGVufDF8MHx8fDE3Mzg5MjY1ODh8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Способы подачи документов в Банк России",
+            "task_type": "theory",
+            "content": "<p>Документы можно подавать в Банк России следующим образом:</p><ol><li>В форме электронных документов через Личный кабинет на сайте Банка России. Это позволяет соискателям удобно и быстро подать заявку и все необходимые документы.</li><li>Необходимо зайти в раздел «Представление отчетности/4010 Соискатели» и следовать инструкциям по заполнению формы и прикреплению документов.</li></ol>",
+            "image_keywords": [
+                "bank submission methods",
+                "online application process",
+                "electronic document submission"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1484807352052-23338990c6c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdiYW5rJTIwc3VibWlzc2lvbiUyMG1ldGhvZHMlMjclMkMlMjAlMjdvbmxpbmUlMjBhcHBsaWNhdGlvbiUyMHByb2Nlc3MlMjclMkMlMjAlMjdlbGVjdHJvbmljJTIwZG9jdW1lbnQlMjBzdWJtaXNzaW9uJTI3JTVEfGVufDF8MHx8fDE3Mzg5MjY1ODh8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Правила заполнения заявления",
+            "task_type": "theory",
+            "content": "<p>При заполнении заявления (форма 4010) необходимо:</p><ul><li>Указать сведение о заявителе, которое должно заполняться автоматически.</li><li>Выбрать вид деятельности в выпадающем списке.</li><li>Заполнить все поля, включая контактные данные исполнителя для связи.</li><li>Загрузить все необходимые файлы и проверить форму на наличие ошибок перед отправкой.</li></ul>",
+            "image_keywords": [
+                "form filling rules",
+                "application completion",
+                "error checking process"
+            ],
+            "image_url": "https://images.unsplash.com/photo-1601119479271-21ca92049c81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdmb3JtJTIwZmlsbGluZyUyMHJ1bGVzJTI3JTJDJTIwJTI3YXBwbGljYXRpb24lMjBjb21wbGV0aW9uJTI3JTJDJTIwJTI3ZXJyb3IlMjBjaGVja2luZyUyMHByb2Nlc3MlMjclNUR8ZW58MXwwfHx8MTczODkyNjU4OXww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Тест на проверку знаний",
+            "task_type": "test",
+            "content": [
+                {
+                    "condition": "Заявление на предоставление лицензии можно подать только в электронном виде.",
+                    "answer": "+"
+                },
+                {
+                    "condition": "Все документы можно подавать в бумажном виде без ограничений.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Необязательно представлять анкету физического лица.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Политика управления конфликтом интересов обязательна к предоставлению.",
+                    "answer": "+"
+                }
+            ]
+        }
+    ]
+}

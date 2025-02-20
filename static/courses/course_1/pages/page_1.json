@@ -1,0 +1,17 @@
+{
+    "title": "Введение",
+    "tasks": [
+        {
+            "title": "Цель тренинга",
+            "task_type": "theory",
+            "content": "<p>Цель данного тренинга заключается в повышении эффективности и результативности продаж в результате отработки основных техник и навыков продвижения банковских продуктов на исходящих звонках. Мы будем рассматривать ключевые аспекты и эффективные стратегии, позволяющие менеджерам по продажам улучшить свои навыки в области телефонного общения.</p>",
+            "image_url": "https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdzYWxlcyUyMHRyYWluaW5nJTI3JTJDJTIwJTI3cGhvbmUlMjBzYWxlcyUyNyUyQyUyMCUyN2JhbmslMjBwcm9kdWN0cyUyNyU1RHxlbnwwfHx8fDE3Mzg3NzUzNTJ8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Структура курса",
+            "task_type": "theory",
+            "content": "<p>Курс охватывает ряд ключевых тем, включая подготовку к звонку, установление контакта с клиентом, выявление потребностей, презентацию продуктов, работу с возражениями и завершение продажи. Каждая из этих тем будет глубоко исследована, чтобы обеспечить участникам необходимые инструменты и навыки для успешной работы.</p>",
+            "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdzYWxlcyUyMHByb2Nlc3MlMjclMkMlMjAlMjdjdXN0b21lciUyMGludGVyYWN0aW9uJTI3JTJDJTIwJTI3Y29tbXVuaWNhdGlvbiUyMHNraWxscyUyNyU1RHxlbnwwfHx8fDE3Mzg3NzUzNTJ8MA&ixlib=rb-4.0.3&q=80&w=400"
+        }
+    ]
+}

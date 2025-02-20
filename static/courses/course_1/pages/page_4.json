@@ -1,0 +1,59 @@
+{
+    "title": "Установление контакта",
+    "tasks": [
+        {
+            "title": "Правило сорока секунд",
+            "task_type": "theory",
+            "content": "<p>Первый контакт с клиентом имеет решающее значение. Как утверждается в правилах успешного общения, у нас никогда не будет второго шанса произвести первое впечатление. Поэтому важно акцентировать внимание на качестве приветствия и установления контакта.</p>",
+            "image_url": "https://images.unsplash.com/photo-1719921116982-dfd753bc15bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdmaXJzdCUyMGltcHJlc3Npb24lMjclMkMlMjAlMjdjbGllbnQlMjBpbnRlcmFjdGlvbiUyNyU1RHxlbnwwfHx8fDE3Mzg3NzUzOTR8MA&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Элементы успешного общения",
+            "task_type": "theory",
+            "content": "<p>При установлении контакта важно приветствование: представьтесь от лица компании, обращайтесь к клиенту по имени и уточните, удобно ли ему говорить. Обозначьте четкую цель звонка, чтобы клиент сразу понимал, почему вы его беспокоите.</p>",
+            "image_url": "https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdncmVldGluZyUyNyUyQyUyMCUyN2NvbW11bmljYXRpb24lMjBjbGFyaXR5JTI3JTVEfGVufDB8fHx8MTczODc3NTM5NXww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Четкость в общении",
+            "task_type": "theory",
+            "content": "<p>Важно помнить, что оператор – это голос банка. Операторы формируют у клиентов представление о банке. Время разговора ограничено, поэтому каждое слово должно быть обдуманным и четким.</p>",
+            "image_url": "https://images.unsplash.com/photo-1512135159328-0fa33838237b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzI1OTF8MHwxfHNlYXJjaHwxfHwlNUIlMjdjbGFyaXR5JTI3JTJDJTIwJTI3YmFuayUyMHJlcHJlc2VudGF0aXZlJTI3JTVEfGVufDB8fHx8MTczODc3NTM5NXww&ixlib=rb-4.0.3&q=80&w=400"
+        },
+        {
+            "title": "Тестовый вопрос",
+            "task_type": "test",
+            "content": [
+                {
+                    "condition": "Правильное приветствование включает представление от лица компании и уточнение, удобно ли клиенту говорить.",
+                    "answer": "+"
+                },
+                {
+                    "condition": "Правило сорока секунд не имеет значения при установлении контакта.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Важно предоставлять клиенту информацию о продукте прежде, чем поздороваться.",
+                    "answer": "-"
+                },
+                {
+                    "condition": "Не следует представляться по имени клиента.",
+                    "answer": "-"
+                }
+            ]
+        },
+        {
+            "title": "Открытый вопрос к пользователю",
+            "task_type": "text",
+            "content": [
+                {
+                    "condition": "Какой главный вывод из этой главы?",
+                    "answer": "Пример правильного ответа: Установление качественного контакта с клиентом через приветствие и четкое обозначение цели звонка критически важно для успешных продаж."
+                }
+            ],
+            "hints": [
+                "Обратите внимание на важность первого впечатления.",
+                "Подумайте о роли оператора как голоса банка."
+            ]
+        }
+    ]
+}
